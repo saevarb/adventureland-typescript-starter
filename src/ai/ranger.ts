@@ -1,5 +1,6 @@
-game_log("Hello from typescript");
+import { greeting } from "TestModule";
 
+greeting("TypeScript");
 map_key("1", "snippet", "parent.start_runner();");
 map_key("2", "snippet", "parent.stop_runner();");
 map_key("3", "snippet", 'load_code("' + character.ctype + '")');
