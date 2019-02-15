@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs" ,
+      "lib": ["esnext", "dom"],
+      "allowSyntheticDefaultImports": true,
+      "noEmit": true,
+      "strict": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "strictPropertyInitialization": true,
+      "noImplicitThis": true,
+      "alwaysStrict": true,
+      "esModuleInterop": true,
+      "downlevelIteration": true,
+      "baseUrl": "./src",
+      "sourceMap": true,
+  }
+}

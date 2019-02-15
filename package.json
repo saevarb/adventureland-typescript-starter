@@ -1,0 +1,25 @@
+{
+  "name": "adventureland-typescript-starter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@babel/plugin-proposal-optional-chaining": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-typescript": "^7.1.0",
+    "@types/friendly-errors-webpack-plugin": "^0.1.1",
+    "@types/node": "^10.12.21",
+    "@types/webpack": "^4.4.24",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "prettier": "^1.16.4",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.2",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1",
+    "webpack": "^4.29.1",
+    "webpack-cli": "^3.2.3"
+  }
+}
