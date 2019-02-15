@@ -41,10 +41,10 @@ function getAuthCookie(): string {
 // This structure determines which files are compiled as well as
 // how they are saved to AL
 const saveMap: { [filename: string]: SaveSlot } = {
-  // "./src/ai/mage.ts": mkSaveSlot("mage", 0),
-  // "./src/ai/priest.ts": mkSaveSlot("priest", 1),
-  // "./src/ai/merchant.ts": mkSaveSlot("merchant", 2),
-  "./src/ai/ranger.ts": mkSaveSlot("ranger", 3),
+  "./src/ai/ranger.ts": mkSaveSlot("ranger", 1),
+  // "./src/ai/priest.ts": mkSaveSlot("priest", 2),
+  // "./src/ai/merchant.ts": mkSaveSlot("merchant", 3),
+  // "./src/ai/mage.ts": mkSaveSlot("mage", 4),
 };
 ////////////////////////////////////////////////////////////////////////////////
 ///                          /\ EDIT THIS /\                                ////
@@ -114,7 +114,6 @@ class ALUploader {
     this.uploadFile(jsFile, save.name, save.slot);
   };
   private processChunk = (chunk: Chunk) => {
-    console.log(chunk);
     chunk.files.forEach((f) => this.processFile(chunk.entryModule.rawRequest, f));
   };
   public apply(compiler: webpack.Compiler) {

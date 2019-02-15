@@ -43,10 +43,10 @@ Find this section:
 // This structure determines which files are compiled as well as
 // how they are saved to AL
 const saveMap: { [filename: string]: SaveSlot } = {
-  // "./src/ai/mage.ts": mkSaveSlot("mage", 0),
-  // "./src/ai/priest.ts": mkSaveSlot("priest", 1),
-  // "./src/ai/merchant.ts": mkSaveSlot("merchant", 2),
-  "./src/ai/ranger.ts": mkSaveSlot("ranger", 3),
+  "./src/ai/ranger.ts": mkSaveSlot("ranger", 1),
+  // "./src/ai/priest.ts": mkSaveSlot("priest", 2),
+  // "./src/ai/merchant.ts": mkSaveSlot("merchant", 3),
+  // "./src/ai/mage.ts": mkSaveSlot("mage", 4),
 };
 ////////////////////////////////////////////////////////////////////////////////
 ///                          /\ EDIT THIS /\                                ////
@@ -54,7 +54,8 @@ const saveMap: { [filename: string]: SaveSlot } = {
 ```
 
 This is the default config. It says that you have a file at `src/ai/` named `ranger.ts` that you wish to compile
-and automatically upload to the AL servers, and it will be saved slot 3 and be named `ranger`. 
+and automatically upload to the AL servers, and it will be saved in slot 1 and be named `ranger**.
+**Note: You cannot save in slot 0, because that is where the default code is stored.***
 
 It does not matter what your files are named or where they are placed, *as long as they are somewhere under the `src/` subdirectory*.
 **Do not specify any other files than those you want to upload**. The example `src/ai/ranger.ts` imports `TestModule` but we do not add `TestModule.ts` to our `saveMap`.
