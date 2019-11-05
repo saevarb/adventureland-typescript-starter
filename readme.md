@@ -28,7 +28,7 @@ First of all, you need to find your authentication token for AL:
 4. In Firefox, click the "Storage" tab. In Chrome, click the "Application" tab.
 5. Click cookies on the left.
 6. Find the cooke named `auth` and copy it. It should be a bunch of random-looking numbers and characters.
-7. Create a new file named `.secret` where you cloned this repository containing only your token(yes, the name starts with a dot).
+7. Create a new file named `.secret` where you cloned this repository containing only your token without the quotes(yes, the name starts with a dot).
 
 Open up your terminal, `cd` to this directory and run `yarn install`. 
 
