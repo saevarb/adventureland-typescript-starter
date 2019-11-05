@@ -31,7 +31,7 @@ function getAuthCookie(): string {
   if (!fs.existsSync(".secret")) {
     throw new Error("You need to create a .secret file with your auth token.");
   }
-  const secret = fs.readFileSync(".secret").toString();
+  const secret = fs.readFileSync(".secret").toString().replace(/\r?\n|\r/g, '');
   return `auth=${secret}`;
 }
 
